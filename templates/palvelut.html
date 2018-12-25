@@ -1,10 +1,33 @@
 {% extends "base.html" %}
-{% set active_page = "index" %}
 
 {% block header %}
 <h1>{% block title %}Palvelut{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
-<img src="{{ url_for('static', filename='images/rekka_viininpunainen_1.jpg')}}">
+
+<content id="maarakennus">
+    <img src="{{ url_for('static', filename='images/kaivinkoneet_tienvarressa_1.jpg')}}">
+    <h2>Maarakennnustyöt</h2>
+    <p id="maansiirto_teksti">KIRJOITA ESITTELYTEKSTI MAARAKENNUS HOMMISTA</p>
+</content>
+
+<content id="kuljetukset">
+    <img src="{{ url_for('static', filename='images/kuitukaapelit_1.jpg')}}">
+    <h2>Kuljetukset</h2>
+    <p id="kuljetukset_teksti">KIRJOITA ESITTELYTEKSTI KULJETUS HOMMISTA</p>
+</content>
+
+<content id="kaapelointi">
+    <img src="{{ url_for('static', filename='images/kuitukaapeli_1.jpg')}}">
+    <h2>Kaapelointityöt</h2>
+    <p id="kaapelointi_teksti">KIRJOITA ESITTELYTEKSTI KAAPELOINTIHOMMISTA</p>
+</content>
+
+<content id="rakennuksen_pohjatyöt">
+    <img src="{{ url_for('static', filename='images/kaivinkoneet_tienvarressa_1.jpg')}}">
+    <h2>Rakennusten pohjatyöt</h2>
+    <p id="rakennuksen_pohjatyöt">KIRJOITA ESITTELYTEKSTI RAKENNUKSEN POHJATÖISTÄ</p>
+</content>
+
 {% endblock %}

@@ -14,8 +14,10 @@
         <script src="{{ url_for('static', filename='scripts.js') }}"></script>
     </head>
     <title>{% block title %}{% endblock %} - Koneurakointi Niittylä</title>
-    <header>
-        <nav class="topnav" id="myTopnav">
+    <header id=yla_palkki>
+        <img id="yla_logo" alt="Koneurakointi Niittylä OY logo" src="{{ url_for('static', filename='images/Logo1.png')}}">
+    </header>
+    <nav class="topnav" id="myTopnav">
             <a href="/" {% if page == 'etusivu' %} class="active"{% endif %}>Etusivu</a>
             <a href="palvelut" {% if page == 'palvelut' %} class="active"{% endif %}>Palvelut</a>
             <a href="tietoa_meista" {% if page == 'tietoa_meista' %} class="active" {% endif%}>Tietoa Meistä</a>
@@ -23,8 +25,7 @@
             <a href="javascript:void(0);" class="icon" onclick="shrinkNavbar()">
                 <i class="fa fa-bars"></i>
             </a>
-        </nav>
-    </header>
+    </nav>
     <main>
         {% block content %}
         {% endblock %}

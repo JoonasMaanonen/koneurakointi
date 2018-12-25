@@ -1,5 +1,3 @@
-
-
 /* Base style*/
 img {
     max-width: 100%;
@@ -10,6 +8,12 @@ h2 {
     font-size:10vw;
 }
 
+header {
+    background-color: #e88e2e;
+    padding: 0;
+    margin 0;
+}
+
  p {
     text-align: center;
     color: black;
@@ -17,12 +21,11 @@ h2 {
     font-size: 5vw;
 }
 
-
 /* -------------------------------------------TOP NAV----------------------------------------*/
 /*BASED ON: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
 /* Top navigation bar color*/
 .topnav {
-    background-color: #333;
+    background-color: #303745;
     overflow: hidden;
 }
 
@@ -39,13 +42,13 @@ h2 {
 
 /* Color of links on hover*/
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #978f87;
     color: black;
 }
 
 /*Active class to highlight the current page*/
 .active {
-    background-color: #4CAF50;
+    background-color: #978f87;
     color: white;
 }
 
@@ -78,9 +81,3 @@ h2 {
     }
 }
 /* -------------------------------------------TOP NAV ENDS----------------------------------------*/
-
-
-
-
-
-
