@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% set active_page = "index" %}
+
+{% block header %}
+<h1>{% block title %}Etusivu{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<section id="intro">
+    <img src="{{ url_for('static', filename='images/kaivuri_hitachi_1.jpg')}}" alt="Firman kaivinkone työmaalla">
+    <p id="intro_teksti">Koneurakointia vuosien kokemuksella!</p>
+</section>
+{% endblock %}

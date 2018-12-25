@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% set active_page = "index" %}
+
+{% block header %}
+<h1>{% block title %}Tietoa Meistä{% endblock %}</h1>
+{% endblock %}
+
+
+{% block content %}
+<img src="{{ url_for('static', filename='images/rekka_valkoinen_1.jpg')}}">
+{% endblock %}
