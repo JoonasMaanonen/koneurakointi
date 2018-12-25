@@ -1,24 +1,44 @@
-/* Base style*/
+/*---------------------------Image Style-----------------------------------------*/
 img {
     max-width: 100%;
     height: auto;
 }
 
+.palvelu {
+    padding 50px;
+    margin 50px;
+}
+
+#etusivu_banderolli {
+    display: block;
+}
+
+/*---------------------------Image Style-----------------------------------------*/
+
 h2 {
     font-size:10vw;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.palvelu content {
+    padding 50px;
+    margin 50px;
+
+}
+
 header {
     background-color: #e88e2e;
-    padding: 0;
-    margin 0;
 }
 
  p {
     text-align: center;
-    color: black;
-    text-decoration: underline;
-    font-size: 5vw;
+    color: #303745;
+    font-size: 3vw;
 }
 
 /* -------------------------------------------TOP NAV----------------------------------------*/
