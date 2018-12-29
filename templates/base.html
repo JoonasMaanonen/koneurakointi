@@ -1,34 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Koneurakointi Niittylä tarjoaa koneurakointi palveluita Kanta-hämeen alueella">
-    <meta name="keywords" content="Koneurakointi,Niittylä,Kanta-Häme,Forssa,Tammela">
+    <meta name="keywords" content="Koneurakointi,Kuljetukset,Kaapelointi,Niittylä,Kanta-Häme,Forssa,Tammela">
     <meta name="author" content="Joonas Maanonen">
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Own custom CSS -->
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
-        <!-- Javascript -->
-        <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
     </head>
+    <body>
     <title>{% block title %}{% endblock %} - Koneurakointi Niittylä</title>
-    <header id=yla_palkki>
-        <img id="yla_logo" alt="Koneurakointi Niittylä OY logo" src="{{ url_for('static', filename='images/Logo1.png')}}">
-    </header>
-    <nav class="topnav" id="myTopnav">
-            <a href="/" {% if page == 'etusivu' %} class="active"{% endif %}>Etusivu</a>
-            <a href="palvelut" {% if page == 'palvelut' %} class="active"{% endif %}>Palvelut</a>
-            <a href="tietoa_meista" {% if page == 'tietoa_meista' %} class="active" {% endif%}>Tietoa Meistä</a>
-            <a href="yhteystiedot" {% if page == 'yhteystiedot'%} class="active" {% endif%}>Yhteystiedot</a>
-            <a href="javascript:void(0);" class="icon" onclick="shrinkNavbar()">
-                <i class="fa fa-bars"></i>
+    <header class="header">
+        <div class="header__inner">
+        <!-- <img class="header__logo" src="{{ url_for('static', filename='images/Logo1.png')}}" alt="Koneurakointi Niittylä OY logo" > --->
+            <h1 class="header__title">
+                Koneurakointi Niittylä
+            </h1>
+            <a id="menu" class="header__menu">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+              </svg>
             </a>
+       </div>
+    </header>
+    <nav id="upper_nav" class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="/" {% if page == 'etusivu' %} class="active"{% endif %}>Etusivu</a></li>
+            <li class="nav__item"><a href="palvelut" {% if page == 'palvelut' %} class="active"{% endif %}>Palvelut</a></li>
+            <li class="nav__item"><a href="yritys" {% if page == 'yritys' %} class="active" {% endif%}>Yritys</a></li>
+            <li class="nav__item"><a href="yhteystiedot" {% if page == 'yhteystiedot'%} class="active" {% endif%}>Yhteystiedot</a></li>
+        </ul>
     </nav>
     <main>
         {% block content %}
         {% endblock %}
     </main>
-    </html>
+    </body>
+</html>

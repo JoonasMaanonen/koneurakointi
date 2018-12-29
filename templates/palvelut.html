@@ -5,29 +5,49 @@
 {% endblock %}
 
 {% block content %}
-
-<content id="maarakennus" class="palvelu">
-    <img class="palvelu" src="{{ url_for('static', filename='images/kaivinkoneet_tienvarressa_1.jpg')}}">
-    <h2>Maarakennnustyöt</h2>
-    <p id="maansiirto_teksti">KIRJOITA ESITTELYTEKSTI MAARAKENNUS HOMMISTA</p>
-</content>
-
-<content id="kuljetukset" class="palvelu">
-    <img src="{{ url_for('static', filename='images/kuitukaapelit_1.jpg')}}">
-    <h2>Kuljetukset</h2>
-    <p id="kuljetukset_teksti">KIRJOITA ESITTELYTEKSTI KULJETUS HOMMISTA</p>
-</content>
-
-<content id="kaapelointi" class="palvelu">
-    <img src="{{ url_for('static', filename='images/kuitukaapeli_1.jpg')}}">
-    <h2>Kaapelointityöt</h2>
-    <p id="kaapelointi_teksti">KIRJOITA ESITTELYTEKSTI KAAPELOINTIHOMMISTA</p>
-</content>
-
-<content id="rakennuksen_pohjatyöt" class="palvelu">
-    <img src="{{ url_for('static', filename='images/kaivinkoneet_tienvarressa_1.jpg')}}">
-    <h2>Rakennusten pohjatyöt</h2>
-    <p id="rakennuksen_pohjatyöt">KIRJOITA ESITTELYTEKSTI RAKENNUKSEN POHJATÖISTÄ</p>
-</content>
-
+<section class="palvelut">
+    <h2 class="palvelut__otsikko">Palvelut</h2>
+    <ul>
+        <li class="palvelu">
+            <div class="palvelu__kuvaus">
+                <h3 class="palvelu__otsikko">Maarakennustyöt</h3>
+                <p class="palvelu__teksti">KIRJOITA ESITTELYTEKSTI MAARAKENNUS HOMMISTAKIRJOITA ESITTELYTEKSTI MAARAKENNUS HOMMISTA
+                        KIRJOITA ESITTELYTEKSTI MAARAKENNUS HOMMISTA
+                        KIRJOITA ESITTELYTEKSTI MAARAKENNUS HOMMISTA
+                </p>
+            </div>
+                <div class="palvelu__kuva">
+                    <img src="{{ url_for('static', filename='images/kaivinkoneet_tienvarressa_1.jpg')}}" alt="Kaksi miestä ja kaivinkone tekemässä maanrakennustöitä">
+                </div>
+            </div>
+        </li>
+        <li class="palvelu">
+            <div class="palvelu__kuvaus">
+                <h3 class="palvelu__otsikko">Kuljetukset</h3>
+                <p class="palvelu__teksti">KIRJOITA ESITTELYTEKSTI KULJETUS HOMMISTA</p>
+            </div>
+            <div class="palvelu__kuva">
+                <img src="{{ url_for('static', filename='images/rekka_viininpunainen_1.jpg')}}" alt="Punainen rekka">
+            </div>
+        </li>
+        <li class="palvelu">
+            <div class="palvelu__kuvaus">
+                <h3 class="palvelu__otsikko">Kaapelointityöt</h3>
+                <p class="palvelu__teksti">KIRJOITA ESITTELYTEKSTI KAAPELOINTI HOMMISTA</p>
+            </div>
+            <div class="palvelu__kuva">
+                <img src="{{ url_for('static', filename='images/kuitukaapeli_1.jpg')}}" alt="Mies tekemässä kaapelointityötä">
+            </div>
+        </li>
+        <li class="palvelu">
+            <div class="palvelu__kuvaus">
+                <h3 class="palvelu__otsikko">Rakennusten pohjatyöt</h3>
+                <p class="palvelu__teksti">KIRJOITA ESITTELYTEKSTI RAKENNUSTEN POHJATYÖ HOMMISTA</p>
+            </div>
+            <div class="palvelu__kuva">
+                <img src="{{ url_for('static', filename='images/kuitukaapeli_1.jpg')}}" alt="Kaivinkone kaivaa kuoppaa punaisen rakennuksen vieressä">
+            </div>
+        </li>
+    </ul>
+</section>
 {% endblock %}

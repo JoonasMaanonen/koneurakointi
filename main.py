@@ -11,9 +11,9 @@ def etusivu():
 def palvelut():
     return render_template('palvelut.html', page='palvelut')
 
-@app.route('/tietoa_meista')
+@app.route('/yritys')
 def tietoa_meista():
-    return render_template('tietoa_meista.html', page='tietoa_meista')
+    return render_template('yritys.html', page='yritys')
 
 @app.route('/yhteystiedot')
 def yhteystiedot():

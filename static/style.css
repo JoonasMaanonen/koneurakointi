@@ -1,8 +1,15 @@
 /*---------------------------Image Style-----------------------------------------*/
-img {
+
+img, embed,
+object, video {
     max-width: 100%;
-    height: auto;
 }
+
+nav a, button {
+    min-width: 48px;
+    min-height: 48px;
+}
+
 
 .palvelu {
     padding 50px;
