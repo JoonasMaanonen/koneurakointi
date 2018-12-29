@@ -28,10 +28,29 @@
     </header>
     <nav id="upper_nav" class="nav">
         <ul class="nav__list">
-            <li class="nav__item"><a href="/" {% if page == 'etusivu' %} class="active"{% endif %}>Etusivu</a></li>
-            <li class="nav__item"><a href="palvelut" {% if page == 'palvelut' %} class="active"{% endif %}>Palvelut</a></li>
-            <li class="nav__item"><a href="yritys" {% if page == 'yritys' %} class="active" {% endif%}>Yritys</a></li>
-            <li class="nav__item"><a href="yhteystiedot" {% if page == 'yhteystiedot'%} class="active" {% endif%}>Yhteystiedot</a></li>
+            {% if page == 'etusivu' %}
+            <li class="nav__item active"><a href="/">Etusivu</a></li>
+            {% else %}
+            <li class="nav__item"><a href="/">Etusivu</a></li>
+            {% endif %}
+
+            {% if page == 'palvelut' %}
+            <li class="nav__item active"><a href="palvelut">Palvelut</a></li>
+            {% else %}
+            <li class="nav__item"><a href="palvelut">Palvelut</a></li>
+            {% endif %}
+
+            {% if page == 'yritys' %}
+            <li class="nav__item active"><a href="yritys">Yritys</a></li>
+            {% else %}
+            <li class="nav__item"><a href="yritys">Yritys</a></li>
+            {% endif %}
+
+            {% if page == 'yhteystiedot' %}
+            <li class="nav__item active"><a href="yhteystiedot">Yhteystiedot</a></li>
+            {% else %}
+            <li class="nav__item"><a href="yhteystiedot">Yhteystiedot</a></li>
+            {% endif %}
         </ul>
     </nav>
     <main>

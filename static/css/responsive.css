@@ -7,7 +7,7 @@
     display: none;
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 800px) {
   .header__logo {
     height: 48px;
     margin-right: 0.5em;

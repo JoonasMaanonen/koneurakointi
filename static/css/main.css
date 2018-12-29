@@ -97,6 +97,9 @@ ul {
   color: #212121;
 }
 
+.active {
+    background-color: orange;
+}
 
 /* ----------------------- Palvelut  ------------------------------ */
 .palvelut {
