@@ -52,7 +52,23 @@
             <li class="nav__item"><a href="yhteystiedot">Yhteystiedot</a></li>
             {% endif %}
         </ul>
-    </nav>
+   </nav>
+    <div class="hero__kuva">
+        <div class="hero__otsikko">
+            {% if page == 'etusivu' %}
+            <h2>Kokemuksella ja ammattitaidolla.</h2>
+            {% endif %}
+            {% if page == 'palvelut' %}
+            <h2>Palvelut</h2>
+            {% endif %}
+            {% if page == 'yritys' %}
+            <h2>Yritys</h2>
+            {% endif %}
+            {% if page == 'yhteystiedot' %}
+            <h2>Yhteystiedot</h2>
+            {% endif %}
+        </div>
+    </div>
     <main>
         {% block content %}
         {% endblock %}
