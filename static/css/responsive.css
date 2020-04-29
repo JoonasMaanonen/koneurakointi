@@ -52,6 +52,9 @@
 }
 
 @media screen and (max-width: 750px) {
+  .palvelut {
+      flex-direction: column;
+  }
   .palvelu {
       flex-wrap: wrap;
   }
