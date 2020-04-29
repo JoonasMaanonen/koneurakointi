@@ -56,16 +56,16 @@
       flex-wrap: wrap;
   }
   .palvelu__kuvaus {
-      order: 1;
+      order: 2;
   }
   .palvelu__kuva {
-      order: 2;
+      order: 1;
       width: 100%;
   }
 }
 
 @media screen and (min-width: 1300px) {
-  main, .header__inner, .nav, .content {
+  main, .header__inner, .nav, .content, .hero__kuva {
     width: 1300px;
     margin-left: auto;
     margin-right: auto;

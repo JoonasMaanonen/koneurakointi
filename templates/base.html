@@ -40,10 +40,10 @@
             <li class="nav__item"><a href="palvelut">Palvelut</a></li>
             {% endif %}
 
-            {% if page == 'yritys' %}
-            <li class="nav__item active"><a href="yritys">Yritys</a></li>
+            {% if page == 'referenssit' %}
+            <li class="nav__item active"><a href="referenssit">Referenssit</a></li>
             {% else %}
-            <li class="nav__item"><a href="yritys">Yritys</a></li>
+            <li class="nav__item"><a href="referenssit">Referenssit</a></li>
             {% endif %}
 
             {% if page == 'yhteystiedot' %}
@@ -53,25 +53,29 @@
             {% endif %}
         </ul>
    </nav>
-    <div class="hero__kuva">
-        <div class="hero__otsikko">
-            {% if page == 'etusivu' %}
-            <h2>Kokemuksella ja ammattitaidolla.</h2>
-            {% endif %}
-            {% if page == 'palvelut' %}
-            <h2>Palvelut</h2>
-            {% endif %}
-            {% if page == 'yritys' %}
-            <h2>Yritys</h2>
-            {% endif %}
-            {% if page == 'yhteystiedot' %}
-            <h2>Yhteystiedot</h2>
-            {% endif %}
-        </div>
-    </div>
     <main>
         {% block content %}
         {% endblock %}
+        <footer>
+          <ul>
+            <li><a href="yhteystiedot">Ota yhteyttä</a></li>
+          <ul>
+        </footer>
     </main>
+    <script>
+      /* Open the drawer when the menu icon is clicked*/
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
     </body>
 </html>

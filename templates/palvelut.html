@@ -1,43 +1,18 @@
 {% extends "base.html" %}
-
-{% block header %}
-<h1>{% block title %}Palvelut{% endblock %}</h1>
-<div class="palvelut__hero">
-    <div class="palvelut__otsikko">
-        <h2>Palvelut</h2>
-    </div>
-</div>
-{% endblock %}
-
 {% block content %}
 <section class="palvelut">
     <ul>
         <li class="palvelu">
+
             <div class="palvelu__kuvaus">
-                <h3 class="palvelu__otsikko">Maarakennustyöt</h3>
-                <p class="palvelu__teksti">KIRJOITA ESITTELYTEKSTI MAARAKENNUS HOMMISTAKIRJOITA ESITTELYTEKSTI MAARAKENNUS HOMMISTA
-                        KIRJOITA ESITTELYTEKSTI MAARAKENNUS HOMMISTA
-                        KIRJOITA ESITTELYTEKSTI MAARAKENNUS HOMMISTA
+                <h3 class="palvelu__otsikko">Sähköverkkorakennus</h3>
+                <p class="palvelu__teksti">
+                    Olemme erikoistuneet maakaapelitöihin. Meillä on monipuolinen kalusto, vastuullinen
+                    henkilöstö ja vuosien kokemus alalta. Tiedämme alan vaihtelevat haasteet ja erityispiirteet.
                 </p>
-            </div>
-                <div class="palvelu__kuva">
-                    <img src="{{ url_for('static', filename='images/kaivinkoneet_tienvarressa_1.jpg')}}" alt="Kaksi miestä ja kaivinkone tekemässä maanrakennustöitä">
-                </div>
-            </div>
-        </li>
-        <li class="palvelu">
-            <div class="palvelu__kuvaus">
-                <h3 class="palvelu__otsikko">Kuljetukset</h3>
-                <p class="palvelu__teksti">KIRJOITA ESITTELYTEKSTI KULJETUS HOMMISTA</p>
-            </div>
-            <div class="palvelu__kuva">
-                <img src="{{ url_for('static', filename='images/rekka_viininpunainen_1.jpg')}}" alt="Punainen rekka">
-            </div>
-        </li>
-        <li class="palvelu">
-            <div class="palvelu__kuvaus">
-                <h3 class="palvelu__otsikko">Kaapelointityöt</h3>
-                <p class="palvelu__teksti">KIRJOITA ESITTELYTEKSTI KAAPELOINTI HOMMISTA</p>
+                <p class="palvelu__teksti">
+                    Panostamme työn laatuun sekä vaatimusten mukaiseen ja siistii lopputulokseen.
+                </p>
             </div>
             <div class="palvelu__kuva">
                 <img src="{{ url_for('static', filename='images/kuitukaapeli_1.jpg')}}" alt="Mies tekemässä kaapelointityötä">
@@ -45,11 +20,34 @@
         </li>
         <li class="palvelu">
             <div class="palvelu__kuvaus">
-                <h3 class="palvelu__otsikko">Rakennusten pohjatyöt</h3>
-                <p class="palvelu__teksti">KIRJOITA ESITTELYTEKSTI RAKENNUSTEN POHJATYÖ HOMMISTA</p>
+                <h3 class="palvelu__otsikko">Maarakennus</h3>
+                <p class="palvelu__teksti">
+                    Suoritamme kunnallistekniikan rakennusta sekä pohjarakentamista.
+                    Asiakkainamme ovat olleet kunnat, vesiyhtiöt sekä yksityiset asukkaat.
+                    Meillä on laaja yhteistökumppaniverkko jota hyödynnämme tarpeen vaatiessa.
+                </p>
+                <p class="palvelu__teksti">
+                    Meille ei ole olemassa liian pientä tai suurta urakkaa.
+                </p>
             </div>
             <div class="palvelu__kuva">
-                <img src="{{ url_for('static', filename='images/kuitukaapeli_1.jpg')}}" alt="Kaivinkone kaivaa kuoppaa punaisen rakennuksen vieressä">
+                <img src="{{ url_for('static', filename='images/kaivinkoneet_tienvarressa_1.jpg')}}" alt="Kaksi miestä ja kaivinkone tekemässä maanrakennustöitä">
+            </div>
+        </li>
+        <li class="palvelu">
+            <div class="palvelu__kuvaus">
+                <h3 class="palvelu__otsikko">Kuljetukset</h3>
+                <p class="palvelu__teksti">
+                    Teemme kuljetuksia monipuolisesti ja joustavasti. Hoidamme muun muassa
+                    työkoneiden ja laitteiden siirtoja, viljarahteja sekä maa- ja kiviaineskuljetuksia
+                    Etelä suomen alueella.
+                </p>
+                <p class="palvelu__teksti">
+                    Saat meiltä suuret ja pienet kuljetukset haluamaasi aikaan ja paikkaan.
+                </p>
+            </div>
+            <div class="palvelu__kuva">
+                <img src="{{ url_for('static', filename='images/rekka_viininpunainen_1.jpg')}}" alt="Mies tekemässä kaapelointityötä">
             </div>
         </li>
     </ul>
