@@ -160,20 +160,64 @@ ul {
     height: 230px;
 }
 
+
+/* ----------------------- Referenssit  ------------------------------ */
+.referenssit {
+  display: flex;
+  flex-direction: column;
+}
+
+.referenssi {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 10px 20px 10px;
+}
+
+.refesivu-kuva {
+  width: 100%;
+  object-fit: fill;
+}
+
+
 /* ----------------------- Footer  ------------------------------ */
 footer {
-  border-top: 1px solid #E0E0E0;
-  padding: 1em;
+    font-size: 12px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer ul {
+    list-style: none;
+  }
+
+.yhteystieto-footer{
+  display: flex;
+  flex-direction: row;
+  padding: 20px 10px 20px 10px;
+  background-color: orange;
+  justify-content: space-between;
+
+}
+
+.referenssi-kuvat {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+.referenssi-kuva {
+  width: 33.33%;
+}
+
+.yhteystieto-teksti{
   width: 100%;
+
 }
 
-footer li {
-  display: inline-block;
-  margin: 0 1em;
-}
-
-footer a {
-  text-decoration: none;
-  color: #333;
-  padding: 1.5em;
+.etusivu-logo{
+    object-fit: fill;
+    padding: 20px 10px 20px 10px;
+    width:100%;
+    height: auto;
 }

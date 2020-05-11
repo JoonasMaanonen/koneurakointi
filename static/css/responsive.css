@@ -65,6 +65,25 @@
       order: 1;
       width: 100%;
   }
+  
+}
+
+@media screen and (max-width: 650px) {
+  .yhteystieto-footer{
+    flex-direction: column;
+  }
+  .referenssi-kuva{
+    width: 100%;
+    height: 33.33%;
+  }
+  
+}
+
+
+@media screen and (max-width: 350px) {
+  .etusivu-logo{
+    padding: 10px 5px 10px 5px;
+  }
 }
 
 @media screen and (min-width: 1300px) {
