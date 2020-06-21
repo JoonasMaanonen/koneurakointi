@@ -18,3 +18,6 @@ def tietoa_meista():
 @app.route('/yhteystiedot')
 def yhteystiedot():
     return render_template('yhteystiedot.html', page='yhteystiedot')
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')

@@ -57,14 +57,26 @@
         {% endblock %}
         <section id="yhteystiedot" class="yhteystieto-footer">
             <div class="yhteystieto-teksti">
-              <h4> KONEURAKOINTI NIITTYLÄ OY</h4>
+              <div>
+                <h4> KONEURAKOINTI NIITTYLÄ OY</h4>
+              </div>
+              <div>
+                <p>
+                  <div>Sepänkuja 3, 31300 Tammela</div>
+                </p>
+              </div>
               <p>
-                <div>Sepänkuja 3, 31300 Tammela</div>
-              </p>
-              <p>
-                <div>&#9993; heikki.niittyla@gmail.com</div>
-                <div>&phone; Heikki: 050 0801110</div>
-                <div>&phone; Janne: 050 3040174</div>
+            {% if page == 'yhteystiedot' %}
+                <div class='footer_div'>&#9993; heikki.niittyla1@gmail.com</div>
+                <div class='footer_div'>&phone; Heikki: 050 0801110</div>
+                <div class='footer_div'>&phone; Janne: 050 3040174</div>
+                <div class='footer_div2'>Y-tunnus: 2811083-4</div>
+                <div class='footer_div2'>Verkkolaskuosoite: 003728110834, Ropo Capital</div>
+            {% else %}
+                <div class='footer_div'>&#9993; heikki.niittyla1@gmail.com</div>
+                <div class='footer_div'>&phone; Heikki: 050 0801110</div>
+                <div class='footer_div'>&phone; Janne: 050 3040174</div>
+            {% endif %}
               </p>
             </div>
             <div class="referenssi-kuvat">
