@@ -51,7 +51,7 @@
 
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   .palvelut {
       flex-direction: column;
   }
@@ -65,7 +65,7 @@
       order: 1;
       width: 100%;
   }
-  
+
 }
 
 @media screen and (max-width: 650px) {
