@@ -8,3 +8,4 @@ Developing this on my free time with no front end development experience, theref
 * Flask backend
 * Minimal js
 * Responsive html,css
+
