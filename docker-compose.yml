@@ -7,13 +7,23 @@ services:
     build: ./flask_app
     ports:
       - "5000:5000"
-    command: gunicorn -w 1 -b 0.0.0.0:5000 wsgi:app
-  
+    command: gunicorn -w 1 --bind 0.0.0.0:5000 wsgi:app
+    volumes:
+      - static_volume:/root/koneurakointi/flask_app/static
+
+    expose:
+      - 5000
+
   nginx:
     container_name: nginx
     restart: always
     build: ./nginx
+    volumes:
+      - static_volume:/root/koneurakointi/flask_app/static
     ports:
-      - "80:80"
+      - "1337:80"
     depends_on:
       - flask_app
+
+volumes:
+  static_volume:
