@@ -5,25 +5,19 @@ services:
     container_name: flask_app
     restart: always
     build: ./flask_app
-    ports:
-      - "5000:5000"
-    command: gunicorn -w 1 --bind 0.0.0.0:5000 wsgi:app
-    volumes:
-      - static_volume:/root/koneurakointi/flask_app/static
-
     expose:
-      - 5000
+      - "5000"
+    volumes:
+      - /root/koneurakointi/flask_app/static
+    command: gunicorn --workers=1 --bind :5000 wsgi:app
 
   nginx:
     container_name: nginx
     restart: always
     build: ./nginx
-    volumes:
-      - static_volume:/root/koneurakointi/flask_app/static
     ports:
-      - "1337:80"
+      - "80:80"
+    volumes:
+      - /www/static
     depends_on:
       - flask_app
-
-volumes:
-  static_volume:
