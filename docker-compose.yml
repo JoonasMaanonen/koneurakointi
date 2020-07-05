@@ -5,12 +5,10 @@ services:
     container_name: flask_app
     restart: always
     build: ./flask_app
-    expose:
-      - "5000"
     volumes:
       - /usr/src/koneurakointi/flask_app/static
-    command: gunicorn --workers=1 --bind :5000 wsgi:app
-
+    ports:
+      - "5000:5000"
   nginx:
     container_name: nginx
     restart: always
