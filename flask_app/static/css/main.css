@@ -129,7 +129,7 @@ ul {
 .hero {
   width: 100%;
   position: relative;
-  background-image: url("../images/kuitukaapeli_3.jpg");
+  background-image: url("../images/kuitukaapeli_3_comp.jpg");
   background-size: cover;
   min-height: 400px;
 }
