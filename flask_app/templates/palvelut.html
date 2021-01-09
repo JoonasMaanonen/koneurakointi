@@ -15,7 +15,7 @@
                 </p>
             </div>
             <div class="palvelu__kuva">
-                <img src="{{ url_for('static', filename='images/sahkoverkko1.jpg')}}" alt="Keltainen kaivinkone nostaa puhelintolppaa">
+                <img src="{{ url_for('static', filename='images/sahkoverkko1.jpg')}}" srcset="{{ url_for('static', filename='images/sahkoverkko1_mobile.jpg')}} 800w" alt="Keltainen kaivinkone nostaa puhelintolppaa">
             </div>
         </li>
         <li class="palvelu">
@@ -31,7 +31,7 @@
                 </p>
             </div>
             <div class="palvelu__kuva">
-                <img src="{{ url_for('static', filename='images/maarakennus1.jpg')}}" alt="Keltainen kaivinkone kaivaa ojaa kahden omakotitalon välissä">
+                <img src="{{ url_for('static', filename='images/maarakennus1.jpg')}}" srcset="{{ url_for('static', filename='images/maarakennus1_mobile.jpg')}} 800w" alt="Keltainen kaivinkone kaivaa ojaa kahden omakotitalon välissä">
             </div>
         </li>
         <li class="palvelu">
@@ -47,7 +47,7 @@
                 </p>
             </div>
             <div class="palvelu__kuva">
-                <img src="{{ url_for('static', filename='images/kuljetus2.jpg')}}" alt="Yhdistelmäajoneuvo kuljettaa jätevesipumppaamoa">
+                <img src="{{ url_for('static', filename='images/kuljetus2.jpg')}}"  srcset="{{ url_for('static', filename='images/kuljetus2_mobile.jpg')}} 800w" alt="Yhdistelmäajoneuvo kuljettaa jätevesipumppaamoa">
             </div>
         </li>
     </ul>
