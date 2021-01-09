@@ -2,7 +2,27 @@
 {% block title %}Referenssit - {% endblock %}</h1>
 {% block content %}
 <section class="referenssit">
-    <div class="referenssi_tekstit">
+  <div class="referenssi_tekstit">
+    <div class="referenssi">
+        <h3>Tammelan kunta</h3>
+        <h4>2020-2021</h4>
+        <ul>
+          <li>Porras-Liesjärvi siirtoviemärin ja vesijohdon rakentaminen.</li>
+          <li>Kunnan kaavoittaman asuinalueen kunnallistekniikan rakentaminen.</li>
+        </ul>
+        <br/>
+        
+      </div>
+    <div class="referenssi">
+        <h3>Jokioisten kunta</h3>
+        <h4>2020</h4>
+        <ul>
+          <li>Leirikeskuksen piharakentaminen.</li>
+          <li>Vesijohto- ja viemärijärjestelmien rakentaminen.</li>
+        </ul>
+        <br/>
+        
+      </div>
       <div class="referenssi">        
         <h3>Elenia Säävarma</h3>
         <h4>2019</h4>
@@ -58,15 +78,18 @@
         
       </div>
     </div>
-    <div class="referenssi_kuvat">
+  <div class="referenssi_kuvat">
         <div class="refesivu-kuva">
-            <img src="https://www.elenia.fi/sites/www.elenia.fi/themes/elenia_fi_2_0/logo.png">
+            <img src="{{ url_for('static', filename='images/tammela-logo-pieni.jpg')}}" alt="Tammelan kunnan logo">
         </div>
         <div class="refesivu-kuva">
-            <img src="https://www.caruna.fi/bundles/carunafrontend/images/caruna-logo.svg">
+            <img src="{{ url_for('static', filename='images/jokioinen-logo-pieni.png')}}" alt="Jokioisten kunnan logo">
         </div>
         <div class="refesivu-kuva">
-            <p class="vesihuolto">Pohjois-Tammelan vesihuolto Oy</p>
+            <img src="https://www.elenia.fi/sites/www.elenia.fi/themes/elenia_fi_2_0/logo.png" alt="Elenia logo">
+        </div>
+        <div class="refesivu-kuva">
+            <img src="{{ url_for('static', filename='images/caruna-logo.png')}}" alt="Caruna logo">
         </div>
     </div>
 </section>

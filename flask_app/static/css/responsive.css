@@ -12,6 +12,9 @@
     height: 48px;
     margin-right: 0.5em;
   }
+  .hero {
+    background-image: url("../images/sahkoverkko3.jpg");
+  }
   .header__title {
     margin-left: 0;
     font-size: 2em;

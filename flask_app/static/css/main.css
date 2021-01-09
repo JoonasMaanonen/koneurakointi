@@ -129,9 +129,10 @@ ul {
 .hero {
   width: 100%;
   position: relative;
-  background-image: url("../images/kuitukaapeli_3_comp.jpg");
   background-size: cover;
   min-height: 400px;
+  background-image: url("../images/sahkoverkko3_2.jpg");
+  /*background-image: url("../images/kansikuva1_2.jpg");*/
 }
 
 .hero article {
@@ -152,6 +153,7 @@ ul {
   clear: both;
   padding: 0;
   flex-direction: row;
+  justify-content: center;
 }
 
 .palvelu {
@@ -186,6 +188,7 @@ ul {
 .referenssit {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .referenssi {
@@ -211,6 +214,7 @@ ul {
   padding-bottom: 50px;
   justify-content: center;
 }
+
 
 .referenssi-kuva {
   width: 100%;

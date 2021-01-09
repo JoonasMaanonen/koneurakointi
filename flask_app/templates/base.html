@@ -7,9 +7,11 @@
     <meta name="description" content="Koneurakointi Niittylä Oy on perheyritys Kanta-Hämeestä, joka keskittyy koneurakointi-, infra- ja kuljetustöihin.">
     <meta name="keywords" content="Koneurakointi Niittylä, Niittylä, maarakennus, maanrakennus, koneurakointi, sähköverkkorakennus, kuljetukset, Kanta-Häme, Forssa, Tammela">
     <meta name="author" content="Joonas Maanonen">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css" disabled>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></noscript>
     </head>
     <body>
     <title>{% block title %}{% endblock %}Koneurakointi Niittylä</title>
@@ -67,11 +69,15 @@
               </div>
               <p>
               <div class='footer_div'>Janne Niittylä</div>
-              <div class='footer_div'>&phone; 050 3040174</div>
-              <div class='footer_div'>&#9993; janne.niittyla@gmail.com</div>
+              <div class='footer_div'>&phone; 050 304 0174</div>
+              <div class="footer_div">
+                <img src="{{ url_for('static', filename='images/janne_email.png')}}" alt="Jannen sähköposti">
+              </div>
               <div class='footer_div2'>Heikki Niittylä</div>
-              <div class='footer_div'>&phone; 050 0801110</div>
-              <div class='footer_div'>&#9993; heikki.niittyla1@gmail.com</div>
+              <div class='footer_div'>&phone; 050 080 1110</div>
+              <div class="footer_div">
+                <img src="{{ url_for('static', filename='images/heikki_email.png')}}" alt="Heikin sähköposti">
+              </div>
             {% if page == 'yhteystiedot' %}
                 <div class='footer_div2'>Y-tunnus: 2811083-4</div>
                 <div class='footer_div2'>Verkkolaskuosoite: 003728110834, Ropo Capital</div>
