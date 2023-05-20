@@ -1,4 +1,4 @@
-FROM python:3.11.0
+FROM python:3.11.3
 
 RUN mkdir -p /usr/src/koneurakointi
 WORKDIR /usr/src/koneurakointi
